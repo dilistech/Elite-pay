@@ -1,0 +1,42 @@
+@import "mixins.scss";
+@import "variables.scss";
+
+.faq-bg {
+  background-image: url("../imgs/banner.jpg");
+  @include background-image;
+  min-height: 50vh;
+}
+
+.faq-content {
+  div {
+    margin: 20px 0;
+
+    span {
+      padding-left: 5px;
+      color: blue;
+    }
+  }
+  p {
+    margin: 20px 0;
+    display: none;
+  }
+  h3 {
+    cursor: pointer;
+    display: inline;
+    font-weight: 400;
+    line-height: 1.5em;
+    font-size: 1.1em;
+  }
+}
+ul.faqs {
+  li {
+    margin: 10px 0;
+  }
+}
+
+@media only screen and (min-width: 200px) and (max-width: 991.98px) {
+  #sidebar.active {
+    min-width: 150px !important;
+    max-width: 150px !important;
+  }
+}
